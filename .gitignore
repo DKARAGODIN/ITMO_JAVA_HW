@@ -2,7 +2,9 @@
 .gradle/
 .build/
 .output/
+.claude/
 */build/
 build/
 out/
 target/
+*.iml
