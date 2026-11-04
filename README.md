@@ -1,33 +1,31 @@
-# Репозиторий с материалами по курсу Java
+# Домашние задания по курсу Java
+
+Каждое задание лежит в отдельной ветке вида `task-NN-title`, например `task-01-jmh`. Условие задания — в `README.md` этой ветки.
 
 ## Порядок сдачи заданий
 
-1. Клонировать данный репозиторий и запушить в СВОЙ НОВЫЙ ПРИВАТНЫЙ репозиторий. Добавляем оригинальный репозиторий в качестве `upstream`
-```
-git clone git@github.com:DKARAGODIN/ITMO_MSE_JAVA.git
-git remote remove origin
-git remote add origin *URL TO YOUR NEW PRIVATE REPO*
-git remote add upstream git@github.com:DKARAGODIN/ITMO_MSE_JAVA.git
-```
+1. Склонировать этот репозиторий (один раз на весь курс):
 
-2. Домашки выкладываются в ветки вида `task-N-title`, контрольные в ветки `control-N-title`
+   ```
+   git clone <адрес этого репозитория>
+   ```
 
-3. Для сдачи задания требуется добавить ветку из основного репозитория в свой и запушить в свой репозиторий
+2. Создать от ветки задания свою ветку. Имя ветки — имя ветки задания и ваша фамилия латиницей через дефис, строчными буквами:
 
-```
-git fetch upstream
-git checkout upstream/task-N-title
-git checkout -b task-N-title
-git push origin task-N-title
-```
+   ```
+   git fetch origin
+   git checkout -b task-01-jmh-ivanov origin/task-01-jmh
+   ```
 
-4. Создать ветку `task-N-title-dev`, в которую добавляется решение
+3. Сделать задание в своей ветке и запушить её в этот же репозиторий:
 
-```
-git checkout -b task-N-title-dev
-```
+   ```
+   git push -u origin task-01-jmh-ivanov
+   ```
 
-5. При готовности задания запушить `dev` ветку и создать Pull Request. В качестве reviewr назначить меня.
-   Заголовок PR должен быть в следующем виде: **Фамилия Имя. Task N** или **Фамилия Имя. Control N**.
+4. Создать Pull Request из своей ветки в ветку задания (`task-01-jmh-ivanov` → `task-01-jmh`, а не в `main`). В качестве reviewer назначить меня.
+   Заголовок PR: **Фамилия Имя. Task N**.
 
-6. Требования к ПО: Java 25, Maven 3.9.14. 
+## Требования к ПО
+
+Java 25, Maven 3.9.14.

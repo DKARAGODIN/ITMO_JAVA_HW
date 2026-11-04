@@ -1,12 +1,12 @@
 package ru.itmo;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MainTest {
-	@Test
-	public void test() {
-		assertTrue(true);
-	}
+    @Test
+    void test() {
+        assertTrue(true);
+    }
 }
