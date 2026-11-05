@@ -10,20 +10,20 @@
    git clone <адрес этого репозитория>
    ```
 
-2. Создать от ветки задания свою ветку. Имя ветки — имя ветки задания и ваша фамилия латиницей через дефис, строчными буквами:
+2. Создать от ветки задания свою ветку. Имя ветки — ваша фамилия латиницей строчными буквами, косая черта и имя ветки задания:
 
    ```
    git fetch origin
-   git checkout -b task-01-jmh-ivanov origin/task-01-jmh
+   git checkout -b ivanov/task-01-jmh origin/task-01-jmh
    ```
 
 3. Сделать задание в своей ветке и запушить её в этот же репозиторий:
 
    ```
-   git push -u origin task-01-jmh-ivanov
+   git push -u origin ivanov/task-01-jmh
    ```
 
-4. Создать Pull Request из своей ветки в ветку задания (`task-01-jmh-ivanov` → `task-01-jmh`, а не в `main`). В качестве reviewer назначить меня.
+4. Создать Pull Request из своей ветки в ветку задания (`ivanov/task-01-jmh` → `task-01-jmh`, а не в `main`). В качестве reviewer назначить меня.
    Заголовок PR: **Фамилия Имя. Task N**.
 
 ## Требования к ПО
